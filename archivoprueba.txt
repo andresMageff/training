@@ -1,0 +1,6 @@
+<!doctype html>
+<head>
+<title>hola mundo</title>
+<body style="backgound-color:blue;"AAAAAA
+<h2>bienvenidos</h2> </body>
+</head>
