@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Array foreach</title>
     <style>
-    table, th, td{
-        border: 1px solid black;
-        margin: auto;
-    }
+        table, th, td{
+            border: 1px solid black;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
-<?php
-$arreglo=array(
+    <?php
+    $arreglo=array(
 
-[
+        [
         'identificador' =>1, 
         'titulo'=>"la magia de tus ojos", 
         'director'=>'andres guevara', 
@@ -48,38 +48,38 @@ $arreglo=array(
         'duracion'=>1
         ],
 
-         [
-          'identificador'=>5,
-	  'titulo'=>'el consuelo',
-	  'director'=>'Miguel Guevara',
-	  'año'=>'2015',
-	  'duracion'=>4
-         ],
-);
+        [
+        'identificador'=>5,
+        'titulo'=>'el consuelo',
+        'director'=>'Miguel Guevara',
+        'año'=>'2015',
+        'duracion'=>4
+        ],
+        );
 
-?>
+        ?>
 
-<table>
-<tr>
-<th>identificador</th>
-<th>titulo</th>
-<th>director</th>
-<th>duracion</th>
-<th>año</th>
-</tr>
-<tr>
-<?php foreach ($arreglo as $key => $value): ?>
-   </tr>
-   <tr>
-   <?php foreach ($value as $valores): ?>
-       
-       <td><?php echo $valores?></td>
-       
-<?php endforeach?>
-</tr>
-<?php endforeach?>
+        <table>
+            <tr>
+                <th>identificador</th>
+                <th>titulo</th>
+                <th>director</th>
+                <th>duracion</th>
+                <th>año</th>
+            </tr>
+            <tr>
+                <?php foreach ($arreglo as $key => $value): ?>
+                </tr>
+                <tr>
+                 <?php foreach ($value as $valores): ?>
+                     
+                     <td><?php echo $valores?></td>
+                     
+                 <?php endforeach?>
+             </tr>
+         <?php endforeach?>
 
-   
-</table>
-</body>
-</html>
+         
+     </table>
+ </body>
+ </html>
